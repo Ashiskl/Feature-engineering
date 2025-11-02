@@ -15,6 +15,23 @@ Matplotlib, Seaborn – for visualization
 Scikit-learn, Statsmodels, Prophet, LSTM (Keras/TensorFlow) – for forecasting
 Jupyter Notebook / Google Colab – for experimentation
 
+⚙️ Feature Engineering Steps
+
+Data Loading and Exploration
+Loaded the dataset using pandas
+Checked for missing values, data types, and overall shape
+Visualized sample time-series trends
+Handling Missing Values
+Missing page views were replaced using forward-fill and mean imputation to preserve temporal consistency.
+Encoding Categorical Features
+Converted text attributes like Project, Access, and Agent into numerical form using Label Encoding and One-Hot Encoding.
+Feature Scaling
+Applied StandardScaler to normalize numerical features (Views, etc.) for balanced learning behavior.
+Feature Extraction / Dimensionality Reduction
+Applied PCA (Principal Component Analysis) to reduce redundancy and improve interpretability of time-based features.
+Feature Selection
+Used correlation analysis and variance thresholding to retain only the most informative features for forecasting.
+
 🧩 Project Workflow
 Data Collection – Downloaded from Kaggle
 Data Cleaning – Handling missing values and duplicates
